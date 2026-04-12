@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	
+	<persistence-unit name="ProyectosJPA" transaction-type="RESOURCE_LOCAL">
+		
+		<class>modelo.entities.Cliente</class>
+<class>modelo.entities.Empleado</class>
+<class>modelo.entities.Departamento</class>
+<class>modelo.entities.Producto</class>
+<class>modelo.entities.Proyecto</class>
+<class>modelo.entities.ProyectoConProducto</class>
+		<properties>
+			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/proyectos_FP_2025?serverTimezone=UTC" />
+			<property name="jakarta.persistence.jdbc.user" value="root" />
+			<property name="jakarta.persistence.jdbc.password" value="1234" />
+			
+			<property name="eclipse.persistence.logging.level" value="FINE" />
+		</properties>
+		
+=======
 <persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" 
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
@@ -19,5 +40,6 @@
 			<property name="eclipselink.logging.level" value="FINE"/>
 			<property name="eclipselink.ddl-generation" value="none"/>
 		</properties>
+>>>>>>> 19a43a3e5704cbdf3b3577fdc6f91f897fe7719d
 	</persistence-unit>
 </persistence>

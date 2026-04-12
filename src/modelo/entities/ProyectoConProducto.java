@@ -1,6 +1,22 @@
 package modelo.entities;
 
 import java.io.Serializable;
+<<<<<<< HEAD
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="proyecto_con_productos")
+public class ProyectoConProducto implements Serializable {
+    @Id
+    @Column(name="num_orden")
+    private int numOrden;
+    private int cantidad; // El atributo nuevo que pide el ejercicio
+
+    public ProyectoConProducto() {}
+
+    public int getCantidad() { return cantidad; }
+    public void setCantidad(int cantidad) { this.cantidad = cantidad; }
+=======
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -94,4 +110,5 @@ public class ProyectoConProducto implements Serializable {
 		return "ProyectoConProducto [numOrden=" + numOrden + ", idProyecto=" + idProyecto + ", cantidad=" + cantidad
 				+ "]";
 	}
+>>>>>>> 19a43a3e5704cbdf3b3577fdc6f91f897fe7719d
 }
